@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    display: grid;
+    column-gap: 5rem;
+    background-color: #f5f3ec;
+    padding: 4rem 0 4rem 6rem;
+    grid-template-columns: .8fr 1fr;
+}
+
+.header-banner__logo {
+    grid-column: span 2;
+    margin-bottom: 2.5rem;
+}
+
+.logo-img {
+    width: 130px;
+    object-fit: contain;
+}
+
+.header-banner__notify-p::before {
+    content: '';
+    display: inline-block;
+    width: 2rem;
+    height: .19rem;
+    background: #0074ff;
+    vertical-align: middle;
+    margin-right: .5rem;
+    border-radius: .1rem;
+}
+
+.header-banner__notify-p {
+    font-size: 1rem;
+    color: #0074ff;
+    margin: 0;
+    margin-bottom: .5rem;
+}
+
+.header-banner__notify-h1 {
+    color: #334148;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.header-banner__notify-input {
+    background: #fff;
+    display: flex;
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    border: 1px solid rgba(219, 219, 219, 0.8);
+}
+
+.header-banner__notify-input input,
+.header-banner__notify-input button {
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: .5rem 1rem;
+}
+
+.header-banner__notify-input input {
+    width: 70%;
+}
+
+.header-banner__notify-input button {
+    background-color: #fbbb21;
+    width: 30%;
+    color: #fff;
+    font-size: 1;
+    border-radius: 1.5rem;
+    max-width: 250px;
+    cursor: pointer;
+}
+
+.header-banner__notify-input button:hover {
+    background-color: rgb(255, 179, 0);
+}
+
+.header-banner__image img {
+    width: 100%;
+}
