@@ -52,6 +52,7 @@ body {
     color: #334148;
     font-size: 3rem;
     font-weight: bolder;
+    margin: 0;
     margin-bottom: 1rem;
 }
 
@@ -93,4 +94,66 @@ body {
 
 .header-banner__image img {
     width: 100%;
+}
+
+
+/*Footer banner*/
+
+.header-banner__footer {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-banner__footer-icons p {
+    color: #334148;
+    font-size: 0.8rem;
+}
+
+.header-banner__footer-icons-img {
+    display: flex;
+    color: #334148;
+}
+
+.header-banner__footer-icons-img a {
+    display: block;
+    width: 2.2rem;
+    height: 1.2rem;
+    text-decoration: none;
+    padding-left: 0 .25rem;
+}
+
+.header-banner__footer-icons-img a:last-child {
+    padding-left: 0;
+}
+
+.header-banner__footer-icons-img img {
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    color: #334148;
+}
+
+.header-banner__footer-services {
+    align-self: flex-end;
+}
+
+.header-banner__footer-services a {
+    color: #334148;
+    text-decoration: none;
+    font-size: .8rem;
+    margin-right: 3rem;
+}
+
+@media screen and (max-width: 980px) {
+    .header-banner {
+        padding: 4rem 0 4rem 4rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .header-banner__image {
+        margin-bottom: 2.5rem;
+    }
 }
