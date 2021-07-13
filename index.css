@@ -65,7 +65,7 @@ body {
 .header-banner__notify-h1 {
     color: #334148;
     line-height: 1.2;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bolder;
     margin: 0;
     margin-bottom: 1rem;
@@ -127,7 +127,7 @@ body {
     grid-column: span 2;
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 4.5rem;
 }
 
 .header-banner__footer-icons p {
@@ -175,9 +175,6 @@ body {
     a {
         font-size: 1.2rem !important;
     }
-    h1 {
-        font-size: 3.5rem !important;
-    }
 }
 
 @media screen and (max-width: 980px) {
@@ -214,7 +211,7 @@ body {
         display: inline-block;
     }
     .header-banner__image {
-        margin-bottom: 2.5rem;
+        margin-bottom: 3rem;
         order: 1;
     }
     .header-banner__footer {
