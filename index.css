@@ -59,7 +59,7 @@ body {
     font-size: 1rem;
     color: #0074ff;
     margin: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: .5rem;
 }
 
 .header-banner__notify-h1 {
@@ -79,6 +79,10 @@ body {
     border-radius: 1.5rem;
     overflow: hidden;
     border: 1px solid rgba(219, 219, 219, 0.8);
+}
+
+.header-banner__notify-input input::placeholder {
+    color: #B2B2B2;
 }
 
 .header-banner__notify-input input,
@@ -107,6 +111,10 @@ body {
     background-color: rgb(255, 179, 0);
 }
 
+.header-banner__image {
+    margin-top: -3.5rem;
+}
+
 .header-banner__image img {
     width: 100%;
 }
@@ -123,7 +131,7 @@ body {
 
 .header-banner__footer-icons p {
     color: #334148;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .header-banner__footer-icons-img {
@@ -157,11 +165,25 @@ body {
 .header-banner__footer-services a {
     color: #334148;
     text-decoration: none;
-    font-size: .8rem;
+    font-size: 1rem;
     margin-right: 3rem;
 }
 
+@media screen and (min-width: 1300px) {
+    p,
+    a {
+        font-size: 1.2rem !important;
+    }
+    h1 {
+        font-size: 3.5rem !important;
+    }
+}
+
 @media screen and (max-width: 980px) {
+    .header-banner__image {
+        margin: 0;
+        align-self: center;
+    }
     .header-banner {
         padding: 4rem 0 4rem 4rem;
         grid-template-columns: 1fr 1fr;
